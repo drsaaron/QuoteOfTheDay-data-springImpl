@@ -242,48 +242,8 @@ public class QuoteOfTheDayDALSpringImpl extends QuoteOfTheDayDALBaseImpl impleme
         return buildQuoteOfTheDayHistory(qotdList, quoteNumber);
     }
 
-    /**
-     * row mapper for a quote.
-     */
-    private static class QuoteRowMapper implements RowMapper {
-
-        @Override
-        public Object mapRow(ResultSet rs, int rowNumber) throws SQLException {
-            Quote q = new Quote();
-            q.setNumber(rs.getInt("QuoteNum"));
-            q.setText(rs.getString("QuoteTxt"));
-            q.setSourceCode(rs.getInt("SrcCde"));
-            String canUse = rs.getString("CanUse");
-            q.setUsable(canUse.equals("Y"));
-            return q;
-        }
-    }
     
-    private static String trimString(String s) {
-        String trimmedString = s.trim().replaceAll("\r", "");
-        return trimmedString;
-    }
+    
 
-    private static class QuoteSourceCodeRowMapper implements RowMapper {
 
-        @Override
-        public Object mapRow(ResultSet rs, int rowNumber) throws SQLException {
-            QuoteSourceCode sourceCode = new QuoteSourceCode();
-            sourceCode.setNumber(rs.getInt("SrcCde"));
-            sourceCode.setText(trimString(rs.getString("SrcTxt")));
-            return sourceCode;
-        }
-    }
-
-    private static class QuoteOfTheDayRowMapper implements RowMapper {
-
-        @Override
-        public Object mapRow(ResultSet rs, int rowNumber) throws SQLException {
-            QuoteOfTheDay qotd = new QuoteOfTheDay();
-            qotd.setNumber(rs.getInt("QotdNum"));
-            qotd.setQuoteNumber(rs.getInt("QuoteNum"));
-            qotd.setRunDate(rs.getDate("QuoteDate"));
-            return qotd;
-        }
-    }
 }
