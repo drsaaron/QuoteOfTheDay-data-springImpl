@@ -1,0 +1,1 @@
+# QuoteOfTheDay-data-springImpl
