@@ -1,6 +1,0 @@
-/home/scott/NetBeansProjects/QuoteOfTheDay-data-springImpl/src/main/java/com/blazartech/products/qotdp/data/access/impl/spring/QuoteOfTheDayDALSpringImpl.java
-/home/scott/NetBeansProjects/QuoteOfTheDay-data-springImpl/src/main/java/com/blazartech/products/qotdp/data/access/impl/spring/config/TransactionManagerConfiguration.java
-/home/scott/NetBeansProjects/QuoteOfTheDay-data-springImpl/src/main/java/com/blazartech/products/qotdp/data/access/impl/spring/QuoteRowMapper.java
-/home/scott/NetBeansProjects/QuoteOfTheDay-data-springImpl/src/main/java/com/blazartech/products/qotdp/data/access/impl/spring/config/TemplateConfiguration.java
-/home/scott/NetBeansProjects/QuoteOfTheDay-data-springImpl/src/main/java/com/blazartech/products/qotdp/data/access/impl/spring/QuoteOfTheDayRowMapper.java
-/home/scott/NetBeansProjects/QuoteOfTheDay-data-springImpl/src/main/java/com/blazartech/products/qotdp/data/access/impl/spring/QuoteSourceCodeRowMapper.java
